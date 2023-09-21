@@ -11,8 +11,8 @@ class TokenizerService
     {
         try {
             DB::beginTransaction();
-
-            $pattern = '/[^a-zA-Z0-9]+/';
+            $inputString = str_replace(' ', '', $inputString);
+            $pattern = '/[\[\]{}(),]+/';
             $tokens = preg_split($pattern, $inputString, -1, PREG_SPLIT_NO_EMPTY);
             $tokensAsString = implode(' ', $tokens);
             // Store input and output in the database
