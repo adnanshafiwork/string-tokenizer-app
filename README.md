@@ -97,6 +97,4 @@ You are welcome to contribute to this project by improving the code, adding new 
 
 This project is open-source and available under the [MIT License](LICENSE). You can use and modify it as per your requirements.
 
----
 
-You can include this README file in the root directory of your GitHub repository to provide information and instructions for users and contributors.
